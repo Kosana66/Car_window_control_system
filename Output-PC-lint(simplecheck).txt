@@ -1,0 +1,642 @@
+﻿PC-lint for C/C++ (NT) Vers. 9.00L, Copyright Gimpel Software 1985-2014
+
+--- Module:   main_application.c (C)
+_
+// The TPM provisioning action is not allowed by the specified flags.  For provisioning to be successful, one of several actions may be required.  The TPM management console (tpm.msc) action to make the TPM Ready may help.  For further information, see the documentation for the Win32_Tpm WMI method 'Provision'.  (The actions that may be required include importing the TPM Owner Authorization value into the system, calling the Win32_Tpm WMI method for provisioning the TPM and specifying TRUE for either 'ForceClear_Allowed' or 'PhysicalPresencePrompts_Allowed' (as indicated by the value returne
+    C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\shared\winerror.h 
+    45666  Error 91: Line exceeds 598 characters (use +linebuf)
+                                                               _
+        STORAGE_QUERY_DEPENDENT_VOLUME_LEV2_ENTRY Lev2Depends[];
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winioctl.h 
+    13405  Error 157: No data may follow an incomplete array
+                                                                                                              _
+_Check_return_ _Ret_maybenull_ _Post_writable_byte_size_(_Count*_Size) _CRTIMP _CRT_JIT_INTRINSIC _CRTNOALIAS _CRTRESTRICT    void * __cdecl calloc(_In_ size_t _Count, _In_ size_t _Size);
+C:\Program Files (x86)\Microsoft Visual Studio\include\stdlib.h  619  Error 10:
+    Expecting identifier or ')'
+                                                                                                       _
+_Check_return_ _Ret_maybenull_ _Post_writable_byte_size_(_Size) _CRTIMP _CRT_JIT_INTRINSIC _CRTNOALIAS _CRTRESTRICT                              void * __cdecl malloc(_In_ size_t _Size);
+C:\Program Files (x86)\Microsoft Visual Studio\include\stdlib.h  621  Error 10:
+    Expecting identifier or ')'
+                                                                                       _
+_Check_return_ _Ret_maybenull_ _Post_writable_byte_size_(_NewSize) _CRTIMP _CRTNOALIAS _CRTRESTRICT                           void * __cdecl realloc(_Pre_maybenull_ _Post_invalid_ void * _Memory, _In_ size_t _NewSize);
+C:\Program Files (x86)\Microsoft Visual Studio\include\stdlib.h  623  Error 10:
+    Expecting identifier or ')'
+                                                                                           _
+_Check_return_ _Ret_maybenull_ _Post_writable_byte_size_(_Count*_Size) _CRTIMP _CRTNOALIAS _CRTRESTRICT                       void * __cdecl _recalloc(_Pre_maybenull_ _Post_invalid_ void * _Memory, _In_ size_t _Count, _In_ size_t _Size);
+C:\Program Files (x86)\Microsoft Visual Studio\include\stdlib.h  625  Error 10:
+    Expecting identifier or ')'
+                                                                                    _
+_Check_return_ _Ret_maybenull_ _Post_writable_byte_size_(_Size) _CRTIMP _CRTNOALIAS _CRTRESTRICT                              void * __cdecl _aligned_malloc(_In_ size_t _Size, _In_ size_t _Alignment);
+C:\Program Files (x86)\Microsoft Visual Studio\include\stdlib.h  627  Error 10:
+    Expecting identifier or ')'
+                                                                                    _
+_Check_return_ _Ret_maybenull_ _Post_writable_byte_size_(_Size) _CRTIMP _CRTNOALIAS _CRTRESTRICT                              void * __cdecl _aligned_offset_malloc(_In_ size_t _Size, _In_ size_t _Alignment, _In_ size_t _Offset);
+C:\Program Files (x86)\Microsoft Visual Studio\include\stdlib.h  628  Error 10:
+    Expecting identifier or ')'
+                                                                                       _
+_Check_return_ _Ret_maybenull_ _Post_writable_byte_size_(_NewSize) _CRTIMP _CRTNOALIAS _CRTRESTRICT                              void * __cdecl _aligned_realloc(_Pre_maybenull_ _Post_invalid_ void * _Memory, _In_ size_t _NewSize, _In_ size_t _Alignment);
+C:\Program Files (x86)\Microsoft Visual Studio\include\stdlib.h  630  Error 10:
+    Expecting identifier or ')'
+                                                                                           _
+_Check_return_ _Ret_maybenull_ _Post_writable_byte_size_(_Count*_Size) _CRTIMP _CRTNOALIAS _CRTRESTRICT                       void * __cdecl _aligned_recalloc(_Pre_maybenull_ _Post_invalid_ void * _Memory, _In_ size_t _Count, _In_ size_t _Size, _In_ size_t _Alignment);
+C:\Program Files (x86)\Microsoft Visual Studio\include\stdlib.h  632  Error 10:
+    Expecting identifier or ')'
+                                                                                       _
+_Check_return_ _Ret_maybenull_ _Post_writable_byte_size_(_NewSize) _CRTIMP _CRTNOALIAS _CRTRESTRICT                              void * __cdecl _aligned_offset_realloc(_Pre_maybenull_ _Post_invalid_ void * _Memory, _In_ size_t _NewSize, _In_ size_t _Alignment, _In_ size_t _Offset);
+C:\Program Files (x86)\Microsoft Visual Studio\include\stdlib.h  634  Error 10:
+    Expecting identifier or ')'
+                                                                                           _
+_Check_return_ _Ret_maybenull_ _Post_writable_byte_size_(_Count*_Size) _CRTIMP _CRTNOALIAS _CRTRESTRICT                       void * __cdecl _aligned_offset_recalloc(_Pre_maybenull_ _Post_invalid_ void * _Memory, _In_ size_t _Count, _In_ size_t _Size, _In_ size_t _Alignment, _In_ size_t _Offset);
+C:\Program Files (x86)\Microsoft Visual Studio\include\stdlib.h  636  Error 10:
+    Expecting identifier or ')'
+        _
+#define _HW_ACCESS_H
+HW_access.h  2  Note 9071: defined macro '_HW_ACCESS_H' is reserved to the
+    compiler [MISRA 2012 Rule 21.1, required]
+_
+int init_LED_comm(void);
+HW_access.h  10  Note 970: Use of modifier or type 'int' outside of a typedef
+    [MISRA 2012 Directive 4.6, advisory]
+_
+int close_LED_comm(void);
+HW_access.h  11  Note 970: Use of modifier or type 'int' outside of a typedef
+    [MISRA 2012 Directive 4.6, advisory]
+_
+int set_LED_BAR(uint8_t b, uint8_t d);
+HW_access.h  12  Note 970: Use of modifier or type 'int' outside of a typedef
+    [MISRA 2012 Directive 4.6, advisory]
+_
+int get_LED_BAR(uint8_t b, uint8_t* d);
+HW_access.h  13  Note 970: Use of modifier or type 'int' outside of a typedef
+    [MISRA 2012 Directive 4.6, advisory]
+_
+int init_7seg_comm(void);
+HW_access.h  20  Note 970: Use of modifier or type 'int' outside of a typedef
+    [MISRA 2012 Directive 4.6, advisory]
+_
+int close_7seg_comm(void);
+HW_access.h  21  Note 970: Use of modifier or type 'int' outside of a typedef
+    [MISRA 2012 Directive 4.6, advisory]
+_
+int select_7seg_digit(uint8_t d);
+HW_access.h  22  Note 970: Use of modifier or type 'int' outside of a typedef
+    [MISRA 2012 Directive 4.6, advisory]
+_
+int set_7seg_digit(uint8_t d);
+HW_access.h  23  Note 970: Use of modifier or type 'int' outside of a typedef
+    [MISRA 2012 Directive 4.6, advisory]
+_
+int init_serial_uplink(uint8_t c);
+HW_access.h  30  Note 970: Use of modifier or type 'int' outside of a typedef
+    [MISRA 2012 Directive 4.6, advisory]
+_
+int close_serial_uplink(uint8_t c);
+HW_access.h  31  Note 970: Use of modifier or type 'int' outside of a typedef
+    [MISRA 2012 Directive 4.6, advisory]
+_
+int init_serial_downlink(uint8_t c);
+HW_access.h  32  Note 970: Use of modifier or type 'int' outside of a typedef
+    [MISRA 2012 Directive 4.6, advisory]
+_
+int close_serial_downlink(uint8_t c);
+HW_access.h  33  Note 970: Use of modifier or type 'int' outside of a typedef
+    [MISRA 2012 Directive 4.6, advisory]
+_
+int send_serial_character(uint8_t c, uint8_t d);
+HW_access.h  34  Note 970: Use of modifier or type 'int' outside of a typedef
+    [MISRA 2012 Directive 4.6, advisory]
+_
+int get_serial_character(uint8_t c, uint8_t* d);
+HW_access.h  35  Note 970: Use of modifier or type 'int' outside of a typedef
+    [MISRA 2012 Directive 4.6, advisory]
+_
+int get_RXC_status(uint8_t c);
+HW_access.h  36  Note 970: Use of modifier or type 'int' outside of a typedef
+    [MISRA 2012 Directive 4.6, advisory]
+_
+int get_TBE_status(uint8_t c);
+HW_access.h  37  Note 970: Use of modifier or type 'int' outside of a typedef
+    [MISRA 2012 Directive 4.6, advisory]
+                             _
+#endif
+
+HW_access.h  39  Info 783: Line does not end with new-line
+                                                                           _
+#...          xQueueGiveFromISR( ( QueueHandle_t ) ( RXC_BinarySemaphore0 ), ( 
+		if (xSemaphoreGiveFromISR(RXC_BinarySemaphore0, &xHigherPTW) != pdPASS) {
+main_application.c  85  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+                                                                           _
+#...          xQueueGiveFromISR( ( QueueHandle_t ) ( RXC_BinarySemaphore1 ), ( 
+		if (xSemaphoreGiveFromISR(RXC_BinarySemaphore1, &xHigherPTW) != pdPASS) {
+main_application.c  90  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+                                                                  _
+#...  xQueueGiveFromISR( ( QueueHandle_t ) ( LED_BinarySemaphore ), ( &xHigherP
+	if (xSemaphoreGiveFromISR(LED_BinarySemaphore, &xHigherPTW) != pdPASS) {
+main_application.c  100  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+                                                      _
+	RXC_BinarySemaphore0 = xSemaphoreCreateBinary();
+main_application.c  137  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+                                                      _
+	RXC_BinarySemaphore1 = xSemaphoreCreateBinary();
+main_application.c  142  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+                                                          _
+	SendInfo_BinarySemaphore = xSemaphoreCreateBinary();
+main_application.c  147  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+                                                        _
+	SendOK_BinarySemaphore = xSemaphoreCreateBinary();
+main_application.c  151  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+                                                            _
+	SendLocked_BinarySemaphore = xSemaphoreCreateBinary();
+main_application.c  155  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+                                                                   _
+	SendMessage_BinarySemaphore = xSemaphoreCreateCounting(10,0);
+main_application.c  159  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+                                                     _
+	LED_BinarySemaphore = xSemaphoreCreateBinary();
+main_application.c  163  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+                                                                _
+	Display_BinarySemaphore = xSemaphoreCreateCounting(10, 0);
+main_application.c  167  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+                _
+#... ( ( unsigned short ) 70 )
+		configMINIMAL_STACK_SIZE,		// nije ispostovano Directive 4.6 jer je makro definisan u drugom fajlu
+main_application.c  207  Note 970: Use of modifier or type 'unsigned' outside
+    of a typedef [MISRA 2012 Directive 4.6, advisory]
+                _
+#... signed short ) 70 )
+		configMINIMAL_STACK_SIZE,		// nije ispostovano Directive 4.6 jer je makro definisan u drugom fajlu
+main_application.c  207  Note 970: Use of modifier or type 'short' outside of a
+    typedef [MISRA 2012 Directive 4.6, advisory]
+                _
+#... ( ( unsigned short ) 70 )
+		configMINIMAL_STACK_SIZE,		// nije ispostovano Directive 4.6 jer je makro definisan u drugom fajlu
+main_application.c  218  Note 970: Use of modifier or type 'unsigned' outside
+    of a typedef [MISRA 2012 Directive 4.6, advisory]
+                _
+#... signed short ) 70 )
+		configMINIMAL_STACK_SIZE,		// nije ispostovano Directive 4.6 jer je makro definisan u drugom fajlu
+main_application.c  218  Note 970: Use of modifier or type 'short' outside of a
+    typedef [MISRA 2012 Directive 4.6, advisory]
+                _
+#... ( ( unsigned short ) 70 )
+		configMINIMAL_STACK_SIZE,		// nije ispostovano Directive 4.6 jer je makro definisan u drugom fajlu
+main_application.c  229  Note 970: Use of modifier or type 'unsigned' outside
+    of a typedef [MISRA 2012 Directive 4.6, advisory]
+                _
+#... signed short ) 70 )
+		configMINIMAL_STACK_SIZE,		// nije ispostovano Directive 4.6 jer je makro definisan u drugom fajlu
+main_application.c  229  Note 970: Use of modifier or type 'short' outside of a
+    typedef [MISRA 2012 Directive 4.6, advisory]
+                _
+#... ( ( unsigned short ) 70 )
+		configMINIMAL_STACK_SIZE,		// nije ispostovano Directive 4.6 jer je makro definisan u drugom fajlu
+main_application.c  240  Note 970: Use of modifier or type 'unsigned' outside
+    of a typedef [MISRA 2012 Directive 4.6, advisory]
+                _
+#... signed short ) 70 )
+		configMINIMAL_STACK_SIZE,		// nije ispostovano Directive 4.6 jer je makro definisan u drugom fajlu
+main_application.c  240  Note 970: Use of modifier or type 'short' outside of a
+    typedef [MISRA 2012 Directive 4.6, advisory]
+                _
+#... ( ( unsigned short ) 70 )
+		configMINIMAL_STACK_SIZE,		// nije ispostovano Directive 4.6 jer je makro definisan u drugom fajlu
+main_application.c  251  Note 970: Use of modifier or type 'unsigned' outside
+    of a typedef [MISRA 2012 Directive 4.6, advisory]
+                _
+#... signed short ) 70 )
+		configMINIMAL_STACK_SIZE,		// nije ispostovano Directive 4.6 jer je makro definisan u drugom fajlu
+main_application.c  251  Note 970: Use of modifier or type 'short' outside of a
+    typedef [MISRA 2012 Directive 4.6, advisory]
+                _
+#... ( ( unsigned short ) 70 )
+		configMINIMAL_STACK_SIZE,		// nije ispostovano Directive 4.6 jer je makro definisan u drugom fajlu
+main_application.c  262  Note 970: Use of modifier or type 'unsigned' outside
+    of a typedef [MISRA 2012 Directive 4.6, advisory]
+                _
+#... signed short ) 70 )
+		configMINIMAL_STACK_SIZE,		// nije ispostovano Directive 4.6 jer je makro definisan u drugom fajlu
+main_application.c  262  Note 970: Use of modifier or type 'short' outside of a
+    typedef [MISRA 2012 Directive 4.6, advisory]
+                _
+#... ( ( unsigned short ) 70 )
+		configMINIMAL_STACK_SIZE,		// nije ispostovano Directive 4.6 jer je makro definisan u drugom fajlu
+main_application.c  273  Note 970: Use of modifier or type 'unsigned' outside
+    of a typedef [MISRA 2012 Directive 4.6, advisory]
+                _
+#... signed short ) 70 )
+		configMINIMAL_STACK_SIZE,		// nije ispostovano Directive 4.6 jer je makro definisan u drugom fajlu
+main_application.c  273  Note 970: Use of modifier or type 'short' outside of a
+    typedef [MISRA 2012 Directive 4.6, advisory]
+                _
+#... ( ( unsigned short ) 70 )
+		configMINIMAL_STACK_SIZE,		// nije ispostovano Directive 4.6 jer je makro definisan u drugom fajlu
+main_application.c  284  Note 970: Use of modifier or type 'unsigned' outside
+    of a typedef [MISRA 2012 Directive 4.6, advisory]
+                _
+#... signed short ) 70 )
+		configMINIMAL_STACK_SIZE,		// nije ispostovano Directive 4.6 jer je makro definisan u drugom fajlu
+main_application.c  284  Note 970: Use of modifier or type 'short' outside of a
+    typedef [MISRA 2012 Directive 4.6, advisory]
+                _
+#... ( ( unsigned short ) 70 )
+		configMINIMAL_STACK_SIZE,		// nije ispostovano Directive 4.6 jer je makro definisan u drugom fajlu
+main_application.c  295  Note 970: Use of modifier or type 'unsigned' outside
+    of a typedef [MISRA 2012 Directive 4.6, advisory]
+                _
+#... signed short ) 70 )
+		configMINIMAL_STACK_SIZE,		// nije ispostovano Directive 4.6 jer je makro definisan u drugom fajlu
+main_application.c  295  Note 970: Use of modifier or type 'short' outside of a
+    typedef [MISRA 2012 Directive 4.6, advisory]
+                                                           _
+#... icSend( ( QueueHandle_t ) ( SendInfo_BinarySemaphore ), NULL, semGIVE_BLOC
+		if (xSemaphoreGive(SendInfo_BinarySemaphore) != pdTRUE) {
+main_application.c  320  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+                                                          _
+#... icSend( ( QueueHandle_t ) ( Display_BinarySemaphore ), NULL, semGIVE_BLOCK
+		if (xSemaphoreGive(Display_BinarySemaphore) != pdTRUE) {
+main_application.c  326  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+_
+}
+main_application.c  330  Info 715: Symbol 'tmH' (line 309) not referenced
+    [MISRA 2012 Rule 2.7, advisory]
+main_application.c  309  Info 830: Location cited in prior message
+_
+}
+main_application.c  330  Info 818: Pointer parameter 'tmH' (line 309) could be
+    declared as pointing to const [MISRA 2012 Rule 8.13, advisory]
+main_application.c  309  Info 830: Location cited in prior message
+                                                                      _
+#...                     xQueueSemaphoreTake( ( RXC_BinarySemaphore0 ), ( ( Tic
+		if (xSemaphoreTake(RXC_BinarySemaphore0, portMAX_DELAY) != pdTRUE) {
+main_application.c  337  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+_
+}
+main_application.c  360  Info 715: Symbol 'pvParameters' (line 332) not
+    referenced [MISRA 2012 Rule 2.7, advisory]
+main_application.c  332  Info 830: Location cited in prior message
+_
+}
+main_application.c  360  Info 818: Pointer parameter 'pvParameters' (line 332)
+    could be declared as pointing to const [MISRA 2012 Rule 8.13, advisory]
+main_application.c  332  Info 830: Location cited in prior message
+                                                                      _
+#...                     xQueueSemaphoreTake( ( RXC_BinarySemaphore1 ), ( ( Tic
+		if (xSemaphoreTake(RXC_BinarySemaphore1, portMAX_DELAY) != pdTRUE) {
+main_application.c  367  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+_
+}
+main_application.c  388  Info 715: Symbol 'pvParameters' (line 362) not
+    referenced [MISRA 2012 Rule 2.7, advisory]
+main_application.c  362  Info 830: Location cited in prior message
+_
+}
+main_application.c  388  Info 818: Pointer parameter 'pvParameters' (line 362)
+    could be declared as pointing to const [MISRA 2012 Rule 8.13, advisory]
+main_application.c  362  Info 830: Location cited in prior message
+                                                                 _
+#... eueGenericSend( ( QueueHandle_t ) ( SendOK_BinarySemaphore ), NULL, semGIV
+			if (xSemaphoreGive(SendOK_BinarySemaphore) != pdTRUE) {
+main_application.c  447  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+                                                                      _
+			granicaBrzine = (100U * (uint16_t)tmpString[6]) + (10U * (uint16_t)tmpString[7]) + (uint16_t)tmpString[8];
+main_application.c  462  Warning 571: Suspicious cast
+main_application.c  462  Warning 571: Suspicious cast
+main_application.c  462  Warning 571: Suspicious cast
+main_application.c  462  Info 734: Loss of precision (assignment) (17 bits to
+    16 bits)
+                                                                                                                                    _
+				nivoProzora = (100U * (uint8_t)tmpString[4]) + (10U * (uint8_t)tmpString[5]) + (uint8_t)tmpString[6];
+main_application.c  467  Info 734: Loss of precision (assignment) (15 bits to 8
+    bits)
+                                                                                                                                        _
+				uint8_t prozor1 = (100U * (uint8_t)tmpString[0]) + (10U * (uint8_t)tmpString[1]) + (uint8_t)tmpString[2];
+main_application.c  488  Info 734: Loss of precision (initialization) (15 bits
+    to 8 bits)
+                                                                                                                                        _
+				uint8_t prozor2 = (100U * (uint8_t)tmpString[3]) + (10U * (uint8_t)tmpString[4]) + (uint8_t)tmpString[5];
+main_application.c  489  Info 734: Loss of precision (initialization) (15 bits
+    to 8 bits)
+                                                                                                                                        _
+				uint8_t prozor3 = (100U * (uint8_t)tmpString[6]) + (10U * (uint8_t)tmpString[7]) + (uint8_t)tmpString[8];
+main_application.c  490  Info 734: Loss of precision (initialization) (15 bits
+    to 8 bits)
+                                                                                                                                          _
+				uint8_t prozor4 = (100U * (uint8_t)tmpString[9]) + (10U * (uint8_t)tmpString[10]) + (uint8_t)tmpString[11];
+main_application.c  491  Info 734: Loss of precision (initialization) (15 bits
+    to 8 bits)
+                                                                        _
+			trenutnaBrzina = (100U * (uint16_t)tmpString[12]) + (10U * (uint16_t)tmpString[13]) + (uint16_t)tmpString[14];
+main_application.c  499  Warning 571: Suspicious cast
+main_application.c  499  Warning 571: Suspicious cast
+main_application.c  499  Warning 571: Suspicious cast
+main_application.c  499  Info 734: Loss of precision (assignment) (17 bits to
+    16 bits)
+                                                                                             _
+#... ) ( SendLocked_BinarySemaphore ), NULL, semGIVE_BLOCK_TIME, queueSEND_TO_B
+						if (xSemaphoreGive(SendLocked_BinarySemaphore) != pdTRUE) {
+main_application.c  538  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+                                                                              _
+#...  ( SendMessage_BinarySemaphore ), NULL, semGIVE_BLOCK_TIME, queueSEND_TO_B
+				if (xSemaphoreGive(SendMessage_BinarySemaphore) != pdTRUE) {
+main_application.c  607  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+_
+}
+main_application.c  617  Info 715: Symbol 'pvParameters' (line 390) not
+    referenced [MISRA 2012 Rule 2.7, advisory]
+main_application.c  390  Info 830: Location cited in prior message
+_
+}
+main_application.c  617  Info 818: Pointer parameter 'pvParameters' (line 390)
+    could be declared as pointing to const [MISRA 2012 Rule 8.13, advisory]
+main_application.c  390  Info 830: Location cited in prior message
+                                                                          _
+#...                     xQueueSemaphoreTake( ( SendInfo_BinarySemaphore ), ( (
+		if (xSemaphoreTake(SendInfo_BinarySemaphore, portMAX_DELAY) != pdTRUE) {
+main_application.c  623  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+_
+}
+main_application.c  724  Info 715: Symbol 'pvParameters' (line 619) not
+    referenced [MISRA 2012 Rule 2.7, advisory]
+main_application.c  619  Info 830: Location cited in prior message
+_
+}
+main_application.c  724  Info 818: Pointer parameter 'pvParameters' (line 619)
+    could be declared as pointing to const [MISRA 2012 Rule 8.13, advisory]
+main_application.c  619  Info 830: Location cited in prior message
+                                                                        _
+#...                     xQueueSemaphoreTake( ( SendOK_BinarySemaphore ), ( ( T
+		if (xSemaphoreTake(SendOK_BinarySemaphore, portMAX_DELAY) != pdTRUE) {
+main_application.c  729  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+_
+}
+main_application.c  748  Info 715: Symbol 'pvParameters' (line 726) not
+    referenced [MISRA 2012 Rule 2.7, advisory]
+main_application.c  726  Info 830: Location cited in prior message
+_
+}
+main_application.c  748  Info 818: Pointer parameter 'pvParameters' (line 726)
+    could be declared as pointing to const [MISRA 2012 Rule 8.13, advisory]
+main_application.c  726  Info 830: Location cited in prior message
+                                                                     _
+#...                     xQueueSemaphoreTake( ( LED_BinarySemaphore ), ( ( Tick
+		if (xSemaphoreTake(LED_BinarySemaphore, portMAX_DELAY) != pdTRUE) {
+main_application.c  755  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+_
+}
+main_application.c  776  Info 715: Symbol 'pvParameters' (line 750) not
+    referenced [MISRA 2012 Rule 2.7, advisory]
+main_application.c  750  Info 830: Location cited in prior message
+_
+}
+main_application.c  776  Info 818: Pointer parameter 'pvParameters' (line 750)
+    could be declared as pointing to const [MISRA 2012 Rule 8.13, advisory]
+main_application.c  750  Info 830: Location cited in prior message
+                                                                            _
+#...                     xQueueSemaphoreTake( ( SendLocked_BinarySemaphore ), (
+		if (xSemaphoreTake(SendLocked_BinarySemaphore, portMAX_DELAY) != pdTRUE) {
+main_application.c  781  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+_
+}
+main_application.c  796  Info 715: Symbol 'pvParameters' (line 778) not
+    referenced [MISRA 2012 Rule 2.7, advisory]
+main_application.c  778  Info 830: Location cited in prior message
+_
+}
+main_application.c  796  Info 818: Pointer parameter 'pvParameters' (line 778)
+    could be declared as pointing to const [MISRA 2012 Rule 8.13, advisory]
+main_application.c  778  Info 830: Location cited in prior message
+                                                                             _
+#...                     xQueueSemaphoreTake( ( SendMessage_BinarySemaphore ), 
+		if (xSemaphoreTake(SendMessage_BinarySemaphore, portMAX_DELAY) != pdTRUE) {
+main_application.c  803  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+_
+}
+main_application.c  895  Info 715: Symbol 'pvParameters' (line 798) not
+    referenced [MISRA 2012 Rule 2.7, advisory]
+main_application.c  798  Info 830: Location cited in prior message
+_
+}
+main_application.c  895  Info 818: Pointer parameter 'pvParameters' (line 798)
+    could be declared as pointing to const [MISRA 2012 Rule 8.13, advisory]
+main_application.c  798  Info 830: Location cited in prior message
+                                                                         _
+#...                     xQueueSemaphoreTake( ( Display_BinarySemaphore ), ( ( 
+		if (xSemaphoreTake(Display_BinarySemaphore, portMAX_DELAY) != pdTRUE) { 
+main_application.c  904  Note 9076: conversion between a pointer to incomplete
+    type and another type [MISRA 2012 Rule 11.2, required]
+ _
+}
+
+main_application.c  987  Info 783: Line does not end with new-line
+main_application.c  987  Info 715: Symbol 'pvParameters' (line 897) not
+    referenced [MISRA 2012 Rule 2.7, advisory]
+main_application.c  897  Info 830: Location cited in prior message
+_
+}
+main_application.c  987  Info 818: Pointer parameter 'pvParameters' (line 897)
+    could be declared as pointing to const [MISRA 2012 Rule 8.13, advisory]
+main_application.c  897  Info 830: Location cited in prior message
+
+    --- Wrap-up for Module: main_application.c
+
+Note 9045: non-hidden definition of type 'struct HTASK__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HTOUCHINPUT__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct SERVICE_STATUS_HANDLE__'
+    [MISRA 2012 Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HBRUSH__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HIMC__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HIMCC__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HKEY__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HSTR__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HWND__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct _wireBRECORD' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct _wireSAFEARRAY' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct _wireVARIANT' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HINSTANCE__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HMIDI__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HMIDIIN__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HMIDIOUT__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HMIDISTRM__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HMONITOR__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HRAWINPUT__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HSAVEDUILANGUAGES__' [MISRA
+    2012 Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HSYNTHETICPOINTERDEVICE__'
+    [MISRA 2012 Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct val_context' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HENHMETAFILE__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HICON__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HDESK__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HDRVR__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HSZ__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HDDEDATA__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct CO_DEVICE_CATALOG_COOKIE__'
+    [MISRA 2012 Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HPALETTE__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HCOLORSPACE__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HWINEVENTHOOK__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HWAVE__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HMIXEROBJ__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HMIXER__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HWAVEIN__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HWAVEOUT__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HWINSTA__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HBITMAP__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HGESTUREINFO__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HCONVLIST__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HCONV__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HMENU__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HUMPD__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HFONT__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HMMIO__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HPEN__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct DPI_AWARENESS_CONTEXT__'
+    [MISRA 2012 Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HLSURF__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HGLRC__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HDROP__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HSPRITE__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct SC_HANDLE__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HKL__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HHOOK__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HDC__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct CO_MTA_USAGE_COOKIE__' [MISRA
+    2012 Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HMETAFILE__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HACCEL__' [MISRA 2012
+    Directive 4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HRGN__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct HRSRC__' [MISRA 2012 Directive
+    4.8, advisory]
+Note 9045: non-hidden definition of type 'struct {...}' [MISRA 2012 Directive
+    4.8, advisory]
+
+--- Global Wrap-up
+
+Info 757: global declarator 'close_7seg_comm(void)' (line 21, file HW_access.h)
+    not referenced
+HW_access.h  21  Info 830: Location cited in prior message
+Info 757: global declarator 'close_LED_comm(void)' (line 11, file HW_access.h)
+    not referenced
+HW_access.h  11  Info 830: Location cited in prior message
+Info 757: global declarator 'close_serial_uplink(uint8_t)' (line 31, file
+    HW_access.h) not referenced
+HW_access.h  31  Info 830: Location cited in prior message
+Info 757: global declarator 'close_serial_downlink(uint8_t)' (line 33, file
+    HW_access.h) not referenced
+HW_access.h  33  Info 830: Location cited in prior message
+Warning 526: Symbol 'init_7seg_comm(void)' (line 20, file HW_access.h) not
+    defined
+HW_access.h  20  Info 830: Location cited in prior message
+Warning 526: Symbol 'init_LED_comm(void)' (line 10, file HW_access.h) not
+    defined
+HW_access.h  10  Info 830: Location cited in prior message
+Warning 526: Symbol 'init_serial_uplink(uint8_t)' (line 30, file HW_access.h)
+    not defined
+HW_access.h  30  Info 830: Location cited in prior message
+Warning 526: Symbol 'init_serial_downlink(uint8_t)' (line 32, file HW_access.h)
+    not defined
+HW_access.h  32  Info 830: Location cited in prior message
+Info 714: Symbol 'main_program(void)' (line 107, file main_application.c) not
+    referenced
+main_application.c  107  Info 830: Location cited in prior message
+Warning 526: Symbol 'select_7seg_digit(uint8_t)' (line 22, file HW_access.h)
+    not defined
+HW_access.h  22  Info 830: Location cited in prior message
+Warning 526: Symbol 'send_serial_character(uint8_t, uint8_t)' (line 34, file
+    HW_access.h) not defined
+HW_access.h  34  Info 830: Location cited in prior message
+Warning 526: Symbol 'set_LED_BAR(uint8_t, uint8_t)' (line 12, file HW_access.h)
+    not defined
+HW_access.h  12  Info 830: Location cited in prior message
+Warning 526: Symbol 'set_7seg_digit(uint8_t)' (line 23, file HW_access.h) not
+    defined
+HW_access.h  23  Info 830: Location cited in prior message
+Warning 526: Symbol 'get_LED_BAR(uint8_t, uint8_t *)' (line 13, file
+    HW_access.h) not defined
+HW_access.h  13  Info 830: Location cited in prior message
+Warning 526: Symbol 'get_serial_character(uint8_t, uint8_t *)' (line 35, file
+    HW_access.h) not defined
+HW_access.h  35  Info 830: Location cited in prior message
+Warning 526: Symbol 'get_RXC_status(uint8_t)' (line 36, file HW_access.h) not
+    defined
+HW_access.h  36  Info 830: Location cited in prior message
+Info 757: global declarator 'get_TBE_status(uint8_t)' (line 37, file
+    HW_access.h) not referenced
+HW_access.h  37  Info 830: Location cited in prior message
